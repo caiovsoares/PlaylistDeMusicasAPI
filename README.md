@@ -4,7 +4,7 @@ Uma API em Typescript com knex.js para uma atividade de P2 da disciplina de Tecn
 #Como Usar
 
 Rode os seguintes comandos no terminal dentro da pasta do projeto
-  npm i
-  npm run knex:migrate
-  npm run knex:seed
-  npm start
+npm i
+npm run knex:migrate
+npm run knex:seed
+npm start
