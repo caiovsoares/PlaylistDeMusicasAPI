@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Uma API em Typescript com knex.js para uma atividade de P2 da disciplina de Tecnologias WEB II da faculdade de Engenharia de Software",
   "main": "index.js",
-  "scripts": {
-    "start": "node dist/server.js",
+  "scripts": {    
+    "start": "ts-node-dev --inspect --ignore-watch node_modules src/server.ts",
     "dev": "ts-node-dev src/server.ts",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
     "knex:seed": "knex --knexfile knexfile.ts seed:run",
