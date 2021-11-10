@@ -1,3 +1,7 @@
+#CUSTOM
+#sqlite Databases
+*.sqlite
+
 # Logs
 logs
 *.log
