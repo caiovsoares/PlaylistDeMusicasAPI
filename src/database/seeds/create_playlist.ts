@@ -6,9 +6,9 @@ export async function seed(knex: Knex): Promise<void> {
 
     // Inserts seed entries
     await knex("playlist").insert([
-        { nome: "MinhaPlaylist", public: false, usuarios_id: 1 },
-        { nome: "So Pancadão", public: true, usuarios_id: 3 },
-        { nome: "Sofrência Falou Mais Alto", public: false, usuarios_id: 1 },
-        { nome: "Pagodin", public: true, usuarios_id: 2 }
+        { nome: "MinhaPlaylist", publica: false, usuarios_id: 1 },
+        { nome: "So Pancadão", publica: true, usuarios_id: 3 },
+        { nome: "Sofrência Falou Mais Alto", publica: false, usuarios_id: 1 },
+        { nome: "Pagodin", publica: true, usuarios_id: 2 }
     ]);
 };
