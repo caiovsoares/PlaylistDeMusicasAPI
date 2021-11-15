@@ -1,0 +1,89 @@
+para rodar
+npm install
+npm run knex:migrate
+npm run knex:seed
+npm start
+
+tem um arquivo json que o senhor pode importar
+para dentro do insomnia que já virá com 
+todas as requisições montadas prontas para testar
+
+playlist:
+
+get por nome url:
+localhost:3333/playlist/So%20Pancadão
+
+get por usuario url:
+localhost:3333/playlist/usuario/Raimundo%20Ian%20Cardoso
+
+post json body:
+{
+	"nome":"aaa", 
+	"publica":"aaaa", 
+	"usuarios_id":"aaaaa", 
+	"musicas":[1, 2, 3]
+}
+
+put json body:
+{
+	"id":"1",
+	"nome":"apenasonomeporgentileza"
+}
+
+delete json body:
+{
+	"id":3
+}
+
+musicas:
+
+get por nome url:
+localhost:3333/musicas/Epitáfio
+
+get por artista url:
+localhost:3333/musicas/artista/Cartola
+
+post json body:
+{
+	"nome": "musica", 
+	"genero": "musical", 
+	"artista": "o favorito", 
+	"banda":"nullable"
+}
+
+put json body:
+{
+	"id":"1",
+	"nome":"apenasonomeporgentileza"
+}
+
+
+delete json body:
+{
+	"id":3
+}
+
+usuarios:
+post json body:
+{
+	"nome":"userTesate",
+	"login":"testanado",
+	"senha":"1234567"
+}
+put json body:
+{
+	"id":"1",
+	"nome":"apenasonomeporgentileza"
+}
+
+delete json body:
+{
+	"id":3
+}
+
+playlist_musicas:
+delete json body:
+{
+	"playlist_id": 2, 
+	"musicas_id": 1
+}
